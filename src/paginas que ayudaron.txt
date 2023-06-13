@@ -1,0 +1,4 @@
+https://expressjs.com/en/guide/routing.html
+la siguiente google advierte de sitio no seguro por la falta de certificado es todo
+https://webdesigningworld.com/node-js/website-page-routing-with-nodejs-and-express-js-and-ejs/
+https://stackoverflow.com/questions/38296046/expressjs-to-ejs-getting-http-500-error
