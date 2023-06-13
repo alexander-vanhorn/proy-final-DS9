@@ -5,9 +5,34 @@ const Tarea = require('../models/tareas'); //conf para el enlance donde se encue
 // Es para la Página principal donde se despliega el listado de todos los registros
 router.get('/', async (req, res) => {
     const tarea = await Tarea.find();
+    console.log('Request for home recieved Time: ', Date.now());
     res.render('index', {
       tarea
     });
+  });
+  /*router.get('/', (req, res) => {
+    console.log('Request for home recieved');
+    res.render('index');
+  });*/
+  
+  router.get('/Catalogo', (req, res) => {
+    console.log('Request for Catalogo recieved Time: ', Date.now());
+    res.render('../public/partes/Lab2MAguilar');
+  });
+  
+  router.get('/Agendar', (req, res) => {
+    console.log('Request for Agendar Citas recieved Time: ', Date.now());
+    res.render('../public/partes/seleccion');
+  });
+
+  router.get('/Registro', (req, res) => {
+    console.log('Request for Registro recieved Time: ', Date.now());
+    res.render('../public/partes/registro');
+  });
+  
+  router.get('/Login', (req, res) => {
+    console.log('Request for Login recieved Time: ', Date.now());
+    res.render('../public/partes/login');
   });
 
 // Agregamos a la base de datos cuando en el formulario envia por medio del post información a /add
