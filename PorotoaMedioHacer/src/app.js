@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const session = require('express-session');
-const morgan = require('morgan');
 // Esto nos permite usar archivos estáticos como CSS, imágenes, etc.
 app.use(express.static('public'));
 // Configura EJS como motor de vistas
@@ -10,7 +9,6 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 //app.use(express.urlencoded({extended: false}))
 app.use('/public', express.static(__dirname + '/public'));
-app.use(morgan('dev'));
 // middlewares
 app.use(session({
  secret: 'my secret',

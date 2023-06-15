@@ -7,10 +7,10 @@ const conexion = require('../db/db');
     res.render('../views/index');          
 })
   
-  router.get('/Catalogo', (req, res) => {
+  /*router.get('/Catalogo', (req, res) => {
     console.log('Request for Catalogo recieved Time: ', Date.now());
     res.render('../public/partes/Lab2MAguilar');
-  });
+  });*/
   
   router.get('/Agendar', (req, res) => {
     console.log('Request for Agendar Citas recieved Time: ', Date.now());
