@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catálogo de productos</title>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../public/css/s1.css">
+	
+</head>
+<body>
+
+	<%- include('../partes/header.ejs'); %>
+
+	<h1>Catálogo de productos</h1>
+	<% productos.forEach((producto) => { %>
+	<div class="container">
+		<div class="product" data-idproducto="<%= producto.nombre %>" data-img="../public/img/auto1.jpg"
+		data-des="<%= producto.nombre %>-modelo" data-precio="<%= producto.precio %>" data-cantidad="0">
+			<img class="imgp" src="../public/img/auto1.jpg" alt="Producto 1">
+			<h3 id="nombre" name="nombre"><%= producto.nombre %></h3>
+			<p id="descript" name="descript"><%= producto.descripcion %></p>
+			<p id="precio" name="precio">Precio: $<%= producto.precio %></p>
+			<p class="Comprar">Agregar</p>
+		</div>
+		<!-- Agregar más productos aquí -->
+		
+	</div>
+	<form action="/carrito/agregar" method="POST">
+		<input type="hidden" name="id" value="<%= producto.id %>">
+ <% }); %>
+ <div class="container">
+	<div id="carritoDeCompras"> </div><br>
+	Total Cantidad:
+	<h2 id=cantidadTotal name="cantidadTotal">Total: </h2><br>
+	Total: B/. :
+	<h2 id=precioTotal>Total: B/.0.00</h2>
+</div>
+	<input type="submit" value="Agregar al Carrito">
+	</form>
+<footer>
+<p style="text-align:center;">Creado por Maez Aguilar Ejemplo altamente preliminar de la pagina web
+	<%- include('../partes/footer.ejs'); %>
+</footer>
+<script type="text/javascript" src="../public/js/control.js"></script>
+</body>
+</html>

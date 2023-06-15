@@ -1,0 +1,23 @@
+https://stackoverflow.com/questions/61721752/how-can-i-conditionally-render-from-2-navbar-choices-using-node-ejs-passport-a
+<%- include partes/header %> <!-- se incluye el menú -->
+
+    <!-- se incluye el contenido dependiendo de la opción del menú -->
+    <% switch(pagina) {
+      case 1: %>
+    <%- include partes/pagina-principal %>
+    <% break
+      case 2: %>
+    <%- include partes/Lab2MAguilar %>
+    <% break
+      case 3: %>
+    <%- include partes/seleccion %>
+    <% break
+      case 4: %>
+    <%- include partes/registro %>
+    <% break
+      case 5: %>
+    <%- include partes/login %>
+    <% break
+      default: %>
+    <%- include partes/404 %>
+    <% break  } %>

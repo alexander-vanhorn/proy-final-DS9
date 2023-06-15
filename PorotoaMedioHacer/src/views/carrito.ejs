@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Carrito de Compras</title>
+</head>
+<body>
+<h1>Carrito de Compras</h1>
+<% if (!productos || productos.length == 0) { %>
+<p>Tu carrito está vacío.</p>
+<% } else { %>
+<% productos.forEach((producto) => { %>
+<div>
+<h2><%= producto.id %></h2>
+<p><%= producto.cantidad %></p>
+<p>Precio: <%= producto.precio %></p>
+</div>
+<% }); %>
+<div class="container">
+    <div id="carritoDeCompras"> </div><br>
+    Total Cantidad:
+    <h2 id=cantidadTotal name="cantidadTotal">Total: </h2><br>
+    Total: B/. :
+    <h2 id=precioTotal>Total: B/.0.00</h2>
+</div>
+<form action="/paypal/pay" method="POST">
+<input type="submit" value="Pagar con PayPal">
+</form>
+<% } %>
+<script type="text/javascript" src="../public/js/control.js"></script>
+</body>
+</html>
