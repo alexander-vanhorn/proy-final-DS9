@@ -17,15 +17,14 @@ app.use(session({
  cookie: { secure: false } // cambiar a true si estás en un entorno https
 }));
 // Rutas const indexRoutes = require('./routes/index');
-const productosRoutes = require('./routes/productos');
 const dexRoutes = require('./routes/index');
+const productosRoutes = require('./routes/productos');
 const carritoRoutes = require('./routes/carrito');
 const paypalRoutes = require('./routes/paypal');
-//app.use('/index', dexRoutes);
+app.use('/', dexRoutes);
 app.use('/productos', productosRoutes);
 app.use('/carrito', carritoRoutes);
 app.use('/paypal', paypalRoutes);
-app.use('/', dexRoutes);
 app.get('/Catalogo', (req, res) => {
   res.redirect('/productos');
  });

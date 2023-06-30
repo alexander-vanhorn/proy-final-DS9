@@ -23,6 +23,6 @@ router.post('/agregar', (req, res) => {
  });
 });
 router.get('/', (req, res) => {
- res.render('carrito', {productos: req.session.cart});
+ res.render('../src/views/carrito', {productos: req.session.cart});
 });
 module.exports = router;

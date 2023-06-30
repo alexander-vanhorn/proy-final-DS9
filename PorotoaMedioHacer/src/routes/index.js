@@ -3,28 +3,28 @@ const router = express.Router();
 const conexion = require('../db/db');
 
   router.get('/', (req, res)=>{                         
-    console.log('Request for Catalogo recieved Time: ', Date.now());
-    res.render('../views/index');          
+    console.log('Request for Index recieved Time: ', Date.now());
+    res.render('../src/views/index');          
 })
-  
-  /*router.get('/Catalogo', (req, res) => {
+  /*
+  router.get('/Catalogo', (req, res) => {
     console.log('Request for Catalogo recieved Time: ', Date.now());
-    res.render('../public/partes/Lab2MAguilar');
+    res.render('../src/public/partes/Lab2MAguilar');
   });*/
-  
+
   router.get('/Agendar', (req, res) => {
     console.log('Request for Agendar Citas recieved Time: ', Date.now());
-    res.render('../public/partes/seleccion');
+    res.render('../src/public/partes/seleccion');
   });
 
   router.get('/Registro', (req, res) => {
     console.log('Request for Registro recieved Time: ', Date.now());
-    res.render('../public/partes/registro');
+    res.render('../src/public/partes/registro');
   });
   
   router.get('/Login', (req, res) => {
     console.log('Request for Login recieved Time: ', Date.now());
-    res.render('../public/partes/login');
+    res.render('../src/public/partes/login');
   });
   
   //const crud = require('../controllers/crud');
