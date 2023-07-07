@@ -13,10 +13,10 @@
 	<%- include('../partes/header.ejs'); %>
 
 	<h1>Catálogo de productos</h1>
-	<% productos.forEach((producto) => { %>
+	<% orders.forEach((producto) => { %>
 	<div class="container">
 		<div class="product" data-idproducto="<%= producto.nombre %>" data-img="../public/img/auto1.jpg"
-		data-des="<%= producto.nombre %>-modelo" data-precio="<%= producto.precio %>" data-cantidad="0">
+		data-des="<%= producto.modelo %>" data-precio="<%= producto.precio %>" data-cantidad="0">
 			<img class="imgp" src="../public/img/auto1.jpg" alt="Producto 1">
 			<h3 id="nombre" name="nombre"><%= producto.nombre %></h3>
 			<h3 id="marca" name="marca"><%= producto.marca %></h3>
@@ -24,9 +24,9 @@
 			<h3 id="yr" name="yr"><%= producto.yr %></h3>
 			<p id="descript" name="descript"><%= producto.descripcion %></p>
 			<p id="precio" name="precio">Precio: $<%= producto.precio %></p>
-			<form action="/carrito/agregar" method="POST" id="form1">
+			<form action="/carrito/agregar" method="POST" id="form<%= producto.id %>">
 			<input type="hidden" name="id" value="<%= producto.id %>">
-			<button type="submit" form="form1" Value="Comprar">Comprar</button>
+			<button type="submit" form="form<%= producto.id %>" Value="Comprar">Comprar</button>
 			</form>
 		</div>	
 		<% }); %>

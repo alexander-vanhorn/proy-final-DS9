@@ -5,23 +5,20 @@
 </head>
 <body>
 <h1>Carrito de Compras</h1>
-<% if (!productos || productos.length == 0) { %>
+<% if (!orders || orders.length == 0) { %>
 <p>Tu carrito está vacío.</p>
 <% } else { %>
-<% productos.forEach((producto) => { %>
+<% orders.forEach((producto) => { %>
 <div>
-<h2><%= producto.id %></h2>
-<p><%= producto.cantidad %></p>
-<p>Precio: <%= producto.precio %></p>
+    <img class="imgp" src="../public/img/auto1.jpg" alt="Producto 1">
+    <h3 id="nombre" name="nombre"><%= producto.nombre %></h3>
+    <h3 id="marca" name="marca"><%= producto.marca %></h3>
+    <h3 id="modelo" name="modelo"><%= producto.modelo %></h3>
+    <h3 id="yr" name="yr"><%= producto.yr %></h3>
+    <p id="descript" name="descript"><%= producto.descripcion %></p>
+    <p id="precio" name="precio">Precio: $<%= producto.precio %></p>
 </div>
 <% }); %>
-<div class="container">
-    <div id="carritoDeCompras"> </div><br>
-    Total Cantidad:
-    <h2 id=cantidadTotal name="cantidadTotal">Total: </h2><br>
-    Total: B/. :
-    <h2 id=precioTotal>Total: B/.0.00</h2>
-</div>
 <form action="/paypal/pay" method="POST">
 <input type="submit" value="Pagar con PayPal">
 </form>

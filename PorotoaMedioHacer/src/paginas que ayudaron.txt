@@ -2,3 +2,11 @@ https://expressjs.com/en/guide/routing.html
 la siguiente google advierte de sitio no seguro por la falta de certificado es todo
 https://webdesigningworld.com/node-js/website-page-routing-with-nodejs-and-express-js-and-ejs/
 https://stackoverflow.com/questions/38296046/expressjs-to-ejs-getting-http-500-error
+https://www.geeksforgeeks.org/req-cookies-and-req-signedcookies-in-express-js/
+https://www.digitalocean.com/community/tutorials/nodejs-req-object-in-expressjs
+https://expressjs.com/en/4x/api.html#req.body
+https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown
+https://www.geeksforgeeks.org/express-js-req-body-property/
+https://www.w3schools.com/js/js_htmldom_events.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements
+https://www.w3schools.com/howto/howto_js_filter_lists.asp

@@ -7,6 +7,7 @@ app.use(express.static('public'));
 // Configura EJS como motor de vistas
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
 //app.use(express.urlencoded({extended: false}))
 app.use('/public', express.static(__dirname + '/public'));
 // middlewares

@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
  if (error) {
  throw error;
  }
- res.render('../src/public/partes/Lab2MAguilar', {productos: results});
+ res.render('../src/public/partes/Lab2MAguilar', {orders: results});
  });
 });
 module.exports = router;
