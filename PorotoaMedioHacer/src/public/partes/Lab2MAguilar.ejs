@@ -19,25 +19,20 @@
 		data-des="<%= producto.nombre %>-modelo" data-precio="<%= producto.precio %>" data-cantidad="0">
 			<img class="imgp" src="../public/img/auto1.jpg" alt="Producto 1">
 			<h3 id="nombre" name="nombre"><%= producto.nombre %></h3>
+			<h3 id="marca" name="marca"><%= producto.marca %></h3>
+			<h3 id="modelo" name="modelo"><%= producto.modelo %></h3>
+			<h3 id="yr" name="yr"><%= producto.yr %></h3>
 			<p id="descript" name="descript"><%= producto.descripcion %></p>
 			<p id="precio" name="precio">Precio: $<%= producto.precio %></p>
-			<p class="Comprar">Agregar</p>
-		</div>
-		<!-- Agregar más productos aquí -->
-		
-	</div>
-	<form action="/carrito/agregar" method="POST">
-		<input type="hidden" name="id" value="<%= producto.id %>">
+			<form action="/carrito/agregar" method="POST" id="form1">
+			<input type="hidden" name="id" value="<%= producto.id %>">
+			<button type="submit" form="form1" Value="Comprar">Comprar</button>
+			</form>
+		</div>	
 		<% }); %>
- <div class="container">
-	<div id="carritoDeCompras"> </div><br>
-	Total Cantidad:
-	<h2 id=cantidadTotal name="cantidadTotal">Total: </h2><br>
-	Total: B/. :
-	<h2 id=precioTotal>Total: B/.0.00</h2>
-</div>
-	<input type="submit" value="Agregar al Carrito">
-	</form>
+	
+		<!-- Agregar más productos aquí -->
+	</div>
 <footer>
 <p style="text-align:center;">Creado por Maez Aguilar Ejemplo altamente preliminar de la pagina web
 	<%- include('../partes/footer.ejs'); %>
