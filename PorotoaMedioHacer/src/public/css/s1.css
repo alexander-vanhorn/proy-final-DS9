@@ -2,8 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-basis: 75%;
 }
-
+#myUL2{
+  list-style-type: none;
+}
+#myUL2 #myLI2{
+  list-style-type: none;
+}
 .product {
   margin: 10px;
   padding: 10px;
@@ -164,6 +170,54 @@ nav a:hover {
   float: right;
   background-color: white;
   font-size: 200%;
+}
+
+.containerizq {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px;
+}
+.range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+}
+.bubble {
+  background: rgb(82, 72, 223);
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgb(82, 72, 223);
+  top: -1px;
+  left: 50%;
+}
+.filter {
+	flex-basis: 20%;
+	margin-right: 20px;
+}
+
+.filter label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.filter input {
+	display: block;
+	margin-bottom: 20px;
+	padding: 5px;
+	width: 100%;
 }
 
 #donJulio {

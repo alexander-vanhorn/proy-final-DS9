@@ -12,10 +12,30 @@
 
 	<%- include('../partes/header.ejs'); %>
 
-	<h1>Catálogo de productos</h1>
+	<div class="containerizq">
+		<div class="filter">
+			<label for="name">Nombre:</label>
+			<input type="text" id="myInput" onkeyup="myFunction()" name="name">
+			<div class="range-wrap">
+			<label for="year">Año:</label>
+			<input type="range" name="year" class="range" id="rng" min="1900" max="2030" onchange="myFunctionRNG()">
+			<output class="bubble"></output>
+			</div>
+					<label for="MIPrice">Minimo Precio:</label>
+					<input type="number" id="MIPrice" onkeyup="myFunctionRP()" name="MIPrice">
+					<label for="MAPrice">Maximo Precio:</label>
+					<input type="number" id="MAPrice" onkeyup="myFunctionRP()" name="MAPrice">
+					<button type="submit">Buscar(no en uso)</button>
+					
+		</div>
+	</div>
+	<div class="containerizq" onmouseover="mOver(this)" onmouseout="mOut(this)" 
+					style="background-color:#3873d9;width:120px;height:20px;padding:40px;">
+					Mouse here</div>
+	<ul id="myUL2">
 	<% orders.forEach((producto) => { %>
 	<div class="container">
-		<div class="product" data-idproducto="<%= producto.nombre %>" data-img="../public/img/auto1.jpg"
+		<li class="myLI2"><div class="product" data-idproducto="<%= producto.nombre %>" data-img="../public/img/auto1.jpg"
 		data-des="<%= producto.modelo %>" data-precio="<%= producto.precio %>" data-cantidad="0">
 			<img class="imgp" src="../public/img/auto1.jpg" alt="Producto 1">
 			<h3 id="nombre" name="nombre"><%= producto.nombre %></h3>
@@ -28,11 +48,11 @@
 			<input type="hidden" name="id" value="<%= producto.id %>">
 			<button type="submit" form="form<%= producto.id %>" Value="Comprar">Comprar</button>
 			</form>
-		</div>	
+		</div></li>	
 		<% }); %>
-	
-		<!-- Agregar más productos aquí -->
+	</ul>
 	</div>
+
 <footer>
 <p style="text-align:center;">Creado por Maez Aguilar Ejemplo altamente preliminar de la pagina web
 	<%- include('../partes/footer.ejs'); %>

@@ -21,18 +21,18 @@
 		  }
 		function CDist(distrito) {
 	 const d1 = ["Mecanico Almirante", "Mecanico Bocas del Toro", "Mecanico Changuinola", "Mecanico Chiriquí Grande"];
-	 const d2 = ["Mecanico Aguadulce", "Antón", "La Pintada", "Natá", "Olá", "Penonomé"];
-	 const d3 = ["Mecanico Colón", "Chagres", "Donoso", "Portobelo", "Santa Isabel", "Omar Torrijos Herrera"];
-	 const d4 = ["Mecanico Alanje", "Barú", "Boquerón", "Boquete", "Bugaba","David", "Dolega", "Gualaca", "Remedios", "Renacimiento","San Félix", "San Lorenzo", "Tierras Altas", "Tolé"];
-	 const d5 = ["Mecanico Chepigana", "Pinogana", "Santa Fe"];
-	 const d6 = ["Mecanico Chitré", "Las Minas", "Los Pozos", "Ocú", "Parita", "Pesé", "Santa María"];
-	 const d7 = ["Mecanico Guararé", "Las Tablas", "Los Santos", "Macaracas", "Pedasí", "Pocrí", "Tonosí"];
-	 const d8 = ["Mecanico Balboa", "Chepo", "Chimán", "Panamá", "San Miguelito", "Taboga"];
-	 const d9 = ["Mecanico Atalaya", "Calobre", "Cañazas", "La Mesa", "Las Palmas", "Mariato", "Montijo", "Río de Jesús", "San Francisco", "Santa Fe", "Santiago", "Soná"];
+	 const d2 = ["Mecanico Aguadulce", "Mecanico Antón", "Mecanico La Pintada", "Mecanico Natá", "Mecanico Olá", "Mecanico Penonomé"];
+	 const d3 = ["Mecanico Colón", "Mecanico Chagres", "Mecanico Donoso", "Mecanico Portobelo", "Mecanico Santa Isabel", "Mecanico Omar Torrijos Herrera"];
+	 const d4 = ["Mecanico Alanje", "Mecanico Barú", "Mecanico Boquerón", "Mecanico Boquete", "Mecanico Bugaba","Mecanico David", "Mecanico Dolega", "Mecanico Gualaca", "Mecanico Remedios", "Mecanico Renacimiento","Mecanico San Félix", "Mecanico San Lorenzo", "Mecanico Tierras Altas", "Mecanico Tolé"];
+	 const d5 = ["Mecanico Chepigana", "Mecanico Pinogana", "Mecanico Santa Fe"];
+	 const d6 = ["Mecanico Chitré", "Mecanico Las Minas", "Mecanico Los Pozos", "Mecanico Ocú", "Mecanico Parita", "Mecanico Pesé", "Mecanico Santa María"];
+	 const d7 = ["Mecanico Guararé", "Mecanico Las Tablas", "Mecanico Los Santos", "Mecanico Macaracas", "Mecanico Pedasí", "Mecanico Pocrí", "Mecanico Tonosí"];
+	 const d8 = ["Mecanico Balboa", "Mecanico Chepo", "Mecanico Chimán", "Mecanico Panamá", "Mecanico San Miguelito", "Mecanico Taboga"];
+	 const d9 = ["Mecanico Atalaya", "Mecanico Calobre", "Mecanico Cañazas", "Mecanico La Mesa", "Mecanico Las Palmas", "Mecanico Mariato", "Mecanico Montijo", "Mecanico Río de Jesús", "Mecanico San Francisco", "Mecanico Santa Fe", "Mecanico Santiago", "Mecanico Soná"];
 	 const d10 = ["Mecanico El Porvenir"];
-	 const d11 = ["Mecanico Cémaco", "Sambú"];
-	 const d12 = ["Mecanico Besikó", "Kankintú", "Kusapín", "Mironó", "Müna", "Nole Düima", "Ñürüm", "Jirondai","Santa Catalina o Calovébora"];
-	 const d13 = ["Mecanico Arraiján", "Capira", "Chame", "La Chorrera", "San Carlos"];
+	 const d11 = ["Mecanico Cémaco", "Mecanico Sambú"];
+	 const d12 = ["Mecanico Besikó", "Mecanico Kankintú", "Mecanico Kusapín", "Mecanico Mironó", "Mecanico Müna", "Mecanico Nole Düima", "Mecanico Ñürüm", "Mecanico Jirondai","Mecanico Santa Catalina"];
+	 const d13 = ["Mecanico Arraiján", "Mecanico Capira", "Mecanico Chame", "Mecanico La Chorrera", "Mecanico San Carlos"];
 	 const d14 = ["Mecanico No", "Funciono", "El", "if", "Mario Hugo"];
 	 var long;
 	 // Ordena el Array Alfabeticamente;)):

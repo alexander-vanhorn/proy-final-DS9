@@ -10,3 +10,6 @@ https://www.geeksforgeeks.org/express-js-req-body-property/
 https://www.w3schools.com/js/js_htmldom_events.asp
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements
 https://www.w3schools.com/howto/howto_js_filter_lists.asp
+https://css-tricks.com/value-bubbles-for-range-inputs/
+https://www.youtube.com/watch?v=OVESuyVoPkI&ab_channel=Fazt
+https://parzibyte.me/blog/2019/05/31/instalar-node-js-npm-android-termux/
