@@ -1,7 +1,6 @@
 {
   "name": "pproto",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
@@ -21,5 +20,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "description": ""
 }

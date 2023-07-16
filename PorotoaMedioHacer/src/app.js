@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3306;
 const session = require('express-session');
 // Esto nos permite usar archivos estáticos como CSS, imágenes, etc.
 app.use(express.static('public'));
